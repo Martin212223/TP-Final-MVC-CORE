@@ -14,6 +14,12 @@
     @using (Html.BeginForm("Create", "Receta", FormMethod.Post))
     {
         <p>
+            @Html.LabelFor(model => model.Titulo)
+            @Html.TextBoxFor(model => model.Titulo)
+            @Html.ValidationMessageFor(model => model.Titulo)
+        </p>
+
+        <p>
             @Html.LabelFor(model => model.Categoria)
             @Html.TextBoxFor(model => model.Categoria)
             @Html.ValidationMessageFor(model => model.Categoria)
