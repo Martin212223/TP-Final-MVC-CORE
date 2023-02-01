@@ -147,3 +147,4 @@ C:\Users\Alternativa\Desktop\Último curso\TP FINAL MVC CORE\slnQuirogaMartin\Si
 C:\Users\Alternativa\Desktop\Último curso\TP FINAL MVC CORE\slnQuirogaMartin\SistemaWebMisRecetas\obj\Debug\netcoreapp3.1\SistemaWebMisRecetas.Views.pdb
 C:\Users\Alternativa\Desktop\Último curso\TP FINAL MVC CORE\slnQuirogaMartin\SistemaWebMisRecetas\obj\Debug\netcoreapp3.1\Razor\Views\Receta\Index.cshtml.g.cs
 C:\Users\Alternativa\Desktop\Último curso\TP FINAL MVC CORE\slnQuirogaMartin\SistemaWebMisRecetas\obj\Debug\netcoreapp3.1\Razor\Views\Receta\Create.cshtml.g.cs
+C:\Users\Alternativa\Desktop\Último curso\TP FINAL MVC CORE\slnQuirogaMartin\SistemaWebMisRecetas\obj\Debug\netcoreapp3.1\Razor\Views\Receta\Detalle.cshtml.g.cs
