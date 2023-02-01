@@ -1,13 +1,8 @@
 ﻿@model IEnumerable<SistemaWebMisRecetas.Models.Receta>
 
-<!DOCTYPE html>
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Index</title>
-</head>
-<body>
+@{
+    ViewData["Title"] = "Index Receta";
+}
 
     @Html.ActionLink("Nueva", "Create", "Receta")
 
@@ -45,5 +40,4 @@
         }
     </table>
 
-</body>
-</html>
+

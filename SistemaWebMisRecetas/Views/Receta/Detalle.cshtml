@@ -1,13 +1,8 @@
 ﻿@model SistemaWebMisRecetas.Models.Receta
 
-<!DOCTYPE html>
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Detalle</title>
-</head>
-<body>
+@{
+    ViewData["Title"] = "Detalle Receta";
+}
 
     <h2>Ver Detalle</h2>
     @Html.ActionLink("Volver a recetas", "Index", "Receta")
@@ -52,5 +47,3 @@
         @Html.DisplayFor(model => model.Email)
     </p>
 
-</body>
-</html>
