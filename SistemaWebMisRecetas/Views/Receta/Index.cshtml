@@ -4,24 +4,29 @@
     ViewData["Title"] = "Index Receta";
 }
 
-    @Html.ActionLink("Nueva", "Create", "Receta")
+@section SideBar {
+    @Html.ActionLink("Añadir receta", "Create", "Receta")
+}
 
-    <table>
-        <tr>
-            <th>@Html.DisplayNameFor(model => model.Id)</th>
-            <th>@Html.DisplayNameFor(model => model.Titulo)</th>
-            <th>@Html.DisplayNameFor(model => model.Categoria)</th>
-            <th>@Html.DisplayNameFor(model => model.Ingredientes)</th>
-            <th>@Html.DisplayNameFor(model => model.Instrucciones)</th>
-            <th>@Html.DisplayNameFor(model => model.Autor)</th>
-            <th>@Html.DisplayNameFor(model => model.Apellido)</th>
-            <th>@Html.DisplayNameFor(model => model.Edad)</th>
-            <th>@Html.DisplayNameFor(model => model.Email)</th>
-            @*<th></th>*@
-        </tr>
+    <div id="index-recetas">
+        @Html.ActionLink("Nueva", "Create", "Receta")
 
-        @foreach (var item in Model)
-        {
+        <table id="tabla-recetas">
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.Id)</th>
+                <th>@Html.DisplayNameFor(model => model.Titulo)</th>
+                <th>@Html.DisplayNameFor(model => model.Categoria)</th>
+                <th>@Html.DisplayNameFor(model => model.Ingredientes)</th>
+                <th>@Html.DisplayNameFor(model => model.Instrucciones)</th>
+                <th>@Html.DisplayNameFor(model => model.Autor)</th>
+                <th>@Html.DisplayNameFor(model => model.Apellido)</th>
+                <th>@Html.DisplayNameFor(model => model.Edad)</th>
+                <th>@Html.DisplayNameFor(model => model.Email)</th>
+                <th></th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
                 <tr>
                     <td>@Html.DisplayFor(modelItem => item.Id)</td>
                     <td>@Html.ActionLink(item.Titulo, "Detalle", "Receta", new{id = item.Id})</td>
@@ -32,12 +37,15 @@
                     <td>@Html.ActionLink(item.Apellido, "RecetasPorApellido", "Receta", new{apellido = item.Apellido})</td>
                     <td>@Html.DisplayFor(modelItem => item.Edad)</td>
                     <td>@Html.DisplayFor(modelItem => item.Email)</td>
-                    @*<td>*@
-                    @*@Html.ActionLink("Eliminar", "Eliminar", "Empleado", new{id = item.Id})
-                    @Html.ActionLink("Editar", "Editar", "Empleado", new{id = item.Id})*@
-                    @*</td>*@
+                    <td>
+                        @Html.ActionLink("Eliminar", "Eliminar", "Receta", new{id = item.Id})
+                        @Html.ActionLink("Editar", "Editar", "Receta", new{id = item.Id})
+                    </td>
                 </tr>
-        }
-    </table>
+            }
+        </table>
+    </div>
+
+    
 
 

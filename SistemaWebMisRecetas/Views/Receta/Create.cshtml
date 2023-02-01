@@ -4,7 +4,12 @@
     ViewData["Title"] = "Create Receta";
 }
 
-    <h1>Nombre receta colocar</h1>
+@section SideBar {
+    <h3>Bienvenido!</h3>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Continental_Breakfast.jpg/1024px-Continental_Breakfast.jpg" alt="desayuno-continental" />
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Paula_Modersohn-Becker_022.jpg/800px-Paula_Modersohn-Becker_022.jpg" alt="pintura-desayuno" />
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Breakfast_manitou2121.jpg/1024px-Breakfast_manitou2121.jpg" alt="desayuno-frutas" />
+}
 
     @using (Html.BeginForm("Create", "Receta", FormMethod.Post))
     {
