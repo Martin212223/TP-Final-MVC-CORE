@@ -65,7 +65,7 @@ namespace SistemaWebMisRecetas.Controllers
         {
             Receta receta = new Receta();
 
-            return View("Create");
+            return View("Create", receta);
         }
 
         //CREATE POST
@@ -81,7 +81,7 @@ namespace SistemaWebMisRecetas.Controllers
                 return RedirectToAction("Index");
             }
 
-            return View("Create", receta);
+            return View(receta);
         }
     }
 }
