@@ -25,6 +25,7 @@
 
 #center {
     display: flex;
+    justify-content: space-between;
 }
 
 #content p {
@@ -33,7 +34,7 @@
 
 #sidebar {
     background-color: orange;
-    width: 70rem;
+    width: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;

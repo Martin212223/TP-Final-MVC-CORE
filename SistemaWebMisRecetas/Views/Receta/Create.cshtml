@@ -27,13 +27,15 @@
 
         <p>
             @Html.LabelFor(model => model.Ingredientes)
-            @Html.TextBoxFor(model => model.Ingredientes)
+        @*@Html.TextBoxFor(model => model.Ingredientes)*@
+        @Html.EditorFor(model => model.Ingredientes, additionalViewData: new { htmlAttributes = new { @class = "form-control" } })
             @Html.ValidationMessageFor(model => model.Ingredientes)
         </p>
-
+    
         <p>
             @Html.LabelFor(model => model.Instrucciones)
-            @Html.TextBoxFor(model => model.Instrucciones)
+        @*@Html.TextBoxFor(model => model.Instrucciones)*@
+        @Html.EditorFor(model => model.Instrucciones, additionalViewData: new { htmlAttributes = new { @class = "form-control" } })
             @Html.ValidationMessageFor(model => model.Instrucciones)
         </p>
 
